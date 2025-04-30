@@ -1,13 +1,16 @@
+import os
+
 # Paths
-DATA_DIR = r'C:\Users\User\Desktop\dataset'
-TRAIN_X_FOLDER = fr'{DATA_DIR}\train_x'
-OUTPUT_DIR = fr'{DATA_DIR}\train_y'
+DATASET_DIR = r'C:\Users\User\Desktop\dataset'
+TRAIN_X_FOLDER = os.path.join(DATASET_DIR, 'train_x')
+TRAIN_Y_FOLDER = os.path.join(DATASET_DIR, 'train_y')
+TEST_IMAGE_PATH = os.path.join(DATASET_DIR, 'train_x', '203.jpg')
 
-# Image parameters
-TARGET_SIZE = (250, 100)  
+# Output folders
+OUTPUT_DIR = TRAIN_Y_FOLDER  # For compatibility
+MODELS_FOLDER = os.path.join(TRAIN_Y_FOLDER, 'models')
+RESULTS_FOLDER = os.path.join(TRAIN_Y_FOLDER, 'results')
 
-# Training
+# Image and training parameters
+TARGET_SIZE = (150, 150)
 EPOCHS = 10
-
-# Test image path
-TEST_IMAGE_PATH = fr'{DATA_DIR}\test_x\203.jpg'
