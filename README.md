@@ -21,3 +21,5 @@ Given a new blurred image, the trained model can predict a deblurred version by 
 
 ## Outputs 
 The trained model is saved in HDF5 format (.h5), along with its weights. During testing, visual results are displayed using matplotlib: original, blurred, and deblurred versions are shown side-by-side for comparison.
+
+![deblur](https://github.com/user-attachments/assets/6c5647dd-b10f-4b13-acc4-97078921a726)
