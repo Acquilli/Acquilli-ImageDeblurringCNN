@@ -1,7 +1,7 @@
 # Acquilli-ImageDeblurringCNN
 Deep learning model that restores sharp images from blurred inputs using convolutional neural networks.
 
-🧠 ## How the Deblurring Model Works 
+## How the Deblurring Model Works 🧠 
 This project uses a Convolutional Neural Network (CNN) to learn how to restore blurred images to a sharper form. The dataset consists of paired images: sharp originals (train_y) and their artificially blurred versions (train_x), created using Gaussian blur.
 
 ## Data Preparation
